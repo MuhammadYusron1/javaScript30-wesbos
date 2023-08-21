@@ -8,6 +8,7 @@
 }
 
 html {
+    overflow-x: hidden;
     background: #018ded url(https://unsplash.it/1500/1000?image=881&blur=5);
     background-size: cover;
     text-align: center;
