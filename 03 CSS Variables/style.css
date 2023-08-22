@@ -1,0 +1,48 @@
+:root {
+    --spacing: 10px;
+    --blur: 5px;
+    --color: #ffc600;
+}
+
+* {
+    font-family: 'helvetica neue', sans-serif;
+    /* box-sizing: border-box; */
+    text-decoration: none;
+    margin: 0; padding: 0;
+    outline: 0; border: 0;
+    text-transform: capitalize;
+}
+
+html {
+    overflow-x: hidden;
+    background: #193549;
+}
+
+body {
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+h2 {
+    margin: 60px;
+}
+
+.h1 {
+    color: var(--color);
+}
+
+.controls {
+    margin: 0 0 50px 0;
+}
+
+input {
+    width: 100px;
+}
+
+img {
+    padding: var(--spacing);
+    background: var(--color);
+    filter: blur(var(--blur));
+}
