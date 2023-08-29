@@ -96,3 +96,20 @@ const transportation = data.reduce(function(obj, item) {
 }, {});
 
 console.log(transportation);
+
+// 9. Find the Median of Array
+// Given the array of N numbers, find the median
+arr = [90, 100, 78, 89, 67, 39, 67, 54];
+function findMedian(a){
+    const sortedArr = a.sort((a,b) => a-b);
+    
+    if (sortedArr.length % 2 == 1){
+        return sortedArr[Math.floor(sortedArr.length/2)];
+    }
+    else if (sortedArr.length % 2 == 0){
+        return Math.floor((sortedArr[(sortedArr.length/2) - 1] + sortedArr[(sortedArr.length/2)]) / 2);
+    }
+}
+
+console.log(findMedian(arr));
+console.log(arr);
